@@ -8,23 +8,24 @@ mongoose.connect('mongodb+srv://ictakoffial2021:ictakoffial2021@ictak-official-w
 const Schema = mongoose.Schema;
 
 const CourseSchema = new Schema({
-    courseTitle            : String,
-    courseImage            : String,
-    shortDesc              : String,
-    LongDes                : String,
-    Reg_Status             : Number,
-    Objectives             : String,
-    Rating                 : Number,
-    dates                  : String,
-    aptitude_test          : String,
-    eligibility            : String,
-    course_Agenda          : String,
-    course_fee             : String,
-    course_delivery        : String,
-    internship_partner     : String,
-    knowledge_partner      : String,
-    index                  : Number,
-    active                 : Boolean 
+  courseTitle            : String,
+  courseImage            : String,
+  shortDesc              : String,
+  LongDes                : String,
+  category               : String,
+  Reg_Status             : Number,
+  Objectives             : String,
+  Rating                 : Number,
+  dates                  : String,
+  aptitude_test          : String,
+  eligibility            : String,
+  course_Agenda          : String,
+  course_fee             : String,
+  course_delivery        : String,
+  internship_partner     : String,
+  knowledge_partner      : String,
+  index                  : Number,
+  active                 : Boolean 
 });    
 
 var Coursedata = mongoose.model('coursedata',CourseSchema);

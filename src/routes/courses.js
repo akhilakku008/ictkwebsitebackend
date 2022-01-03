@@ -147,17 +147,19 @@ app.post('/Course/update',upload.single('image'), (req, res) => {
         courseTitle: req.body.courseTitle,
         courseImage: req.file.filename,
         shortDesc: req.body.shortDesc,
-        Objectives: req.body.Objectives,
         Reg_Status: req.body.Reg_Status,
-        Category: req.body.Category,
+        Objectives: req.body.Objectives,
         Rating: req.body.Rating,
         LongDes: req.body.LongDes,
         dates: req.body.dates,
         eligibility: req.body.eligibility,
-        course_Agenda: req.body.course_Agenda,
-        aptitude_test: req.body.aptitude_test,
         course_fee: req.body.course_fee,
         entrance_details: req.body.entrance_details,
+        course_Agenda:req.body.course_Agenda,
+        aptitude_test: req.body.aptitude_test,
+        course_delivery: req.body.course_delivery,
+        internship_partner: req.body.internship_partner,
+        knowledge_partner: req.body.knowledge_partner,
         active: req.body.active
     }
 
